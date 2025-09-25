@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KEEP IT MOVING MANAGEMENT LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 40px;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f0b400;
+    }
+
+    section {
+      height: 100vh;
+      padding: 100px 80px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1634120160110-08ef6adc1a25?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .company-name {
+      font-family: 'Impact', sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #f0b400;
+    }
+
+    .icon-right {
+      width: 80px;
+      height: 80px;
+      margin-left: auto;
+    }
+
+    .flex-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .services, .advantages, .process {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-item, .advantage-item, .process-step {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 30%;
+    }
+
+    .form-section p {
+      margin: 20px 0;
+    }
+
+    .contact-block {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px;
+    }
+
+    .contact-info {
+      max-width: 60%;
+    }
+
+    a.email-link {
+      color: #f0b400;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="font-family: Impact; font-size: 28px;"></div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#benefits">Why Us</a>
+      <a href="#process">Our Process</a>
+      <a href="#form">Get in Touch</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="company-name">KEEP IT MOVING MANAGEMENT LLC</div>
+      <div class="subtitle">
+        We provide strategic consulting in business development, financial operations, and organizational management.  
+        Empowering entrepreneurs and companies to scale effectively, reduce risks, and make confident decisions.
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <div class="section-title">Who We Are</div>
+    <div class="flex-row">
+      <div>
+        KEEP IT MOVING MANAGEMENT LLC is a results-driven consulting firm based in the heart of Saint Louis, Missouri.
+        We specialize in helping businesses streamline their operations, manage their finances smartly, and grow with confidence. 
+        Our team brings years of combined experience in finance, strategy, and leadership development.
+        We’re not just advisors — we’re partners in your progress.
+      </div>
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/briefcase.png" alt="About Icon" class="icon-right">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="section-title">What We Do</div>
+    <div class="services">
+      <div class="service-item">
+        <strong>Business Strategy Consulting</strong><br/>
+        We assess, optimize, and transform your business model for scalable success using real-world insights and proven methodologies.
+      </div>
+      <div class="service-item">
+        <strong>Financial Planning & Analysis</strong><br/>
+        Our experts build custom financial strategies, budgeting systems, and forecasting models tailored to your business goals.
+      </div>
+      <div class="service-item">
+        <strong>Operational Efficiency</strong><br/>
+        We improve internal processes, reduce costs, and implement systems that enable sustainable long-term growth.
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="benefits">
+    <div class="section-title">Why Choose Us</div>
+    <div class="advantages">
+      <div class="advantage-item">
+        <strong>Proven Expertise</strong><br/>
+        Our team brings real-world experience from Fortune 500 companies and high-growth startups.
+      </div>
+      <div class="advantage-item">
+        <strong>Custom Solutions</strong><br/>
+        We don’t do one-size-fits-all. Every recommendation is based on your unique needs and vision.
+      </div>
+      <div class="advantage-item">
+        <strong>Client-Centered Approach</strong><br/>
+        We work closely with you from start to finish, staying agile and communicative every step of the way.
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="section-title">How We Work</div>
+    <div class="process">
+      <div class="process-step">
+        <strong>1. Discovery Call</strong><br/>
+        We start by understanding your business, challenges, and objectives through a 1-on-1 call.
+      </div>
+      <div class="process-step">
+        <strong>2. Strategic Planning</strong><br/>
+        Our team develops a detailed plan with actionable steps tailored to your company’s goals.
+      </div>
+      <div class="process-step">
+        <strong>3. Execution & Support</strong><br/>
+        We help implement solutions and provide ongoing support to ensure measurable results.
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Phrases -->
+  <section id="form" class="form-section">
+    <div class="section-title">Let’s Talk</div>
+    <p>Tell us about your business goals, challenges, or questions.</p>
+    <p>We’ll get back to you within 1-2 business days with insights or next steps.</p>
+    <p>Your growth starts with a conversation.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-block">
+    <div class="contact-info">
+      <div class="section-title">Get in Touch</div>
+      <p>Let’s build something impactful together. Reach out to us today.</p>
+      <p>We respond personally to every inquiry. No bots — just real people ready to help.</p>
+      <p>📍 7217 Watson Rd, Saint Louis MO 63119, United States</p>
+      <p>📧 <a class="email-link" href="mailto:welcome@keepitmovingmgmt.org">welcome@keepitmovingmgmt.org</a></p>
+    </div>
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/send-mass-email.png" alt="Email Icon" class="icon-right">
+  </section>
+
+</body>
+</html>
